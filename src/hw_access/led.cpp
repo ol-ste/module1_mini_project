@@ -74,14 +74,14 @@ void Led::activateSteadyMode()
 void Led::activateBlinkingSlowMode()
 {
     state = 1;
-    currentBlinkingPeriod = BLINKING_SLOW_PERIOD;
+    currentBlinkingPeriod = BLINKING_SLOW_PERIOD_MS;
     digitalWrite(pin, HIGH);
 }
 
 void Led::activateBlinkingFastMode()
 {
     state = 1;
-    currentBlinkingPeriod = BLINKING_FAST_PERIOD;
+    currentBlinkingPeriod = BLINKING_FAST_PERIOD_MS;
     digitalWrite(pin, HIGH);
 }
 

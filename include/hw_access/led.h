@@ -6,11 +6,11 @@
 class Led : BoardComponent
 {
 private:
-    static constexpr u16_t BLINKING_SLOW_PERIOD = 500;
-    static constexpr u16_t BLINKING_FAST_PERIOD = 50;
+    static constexpr u16_t BLINKING_SLOW_PERIOD_MS = 500;
+    static constexpr u16_t BLINKING_FAST_PERIOD_MS = 50;
 
     LedMode currentMode = LedMode::Off;
-    u16_t currentBlinkingPeriod = BLINKING_SLOW_PERIOD;
+    u16_t currentBlinkingPeriod = BLINKING_SLOW_PERIOD_MS;
 
     bool state;
     bool allowModeChange = true;

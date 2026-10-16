@@ -24,7 +24,7 @@ void Ldr::init()
 
 void Ldr::poll()
 {
-    if (millis() - lastTimeChanged > POLL_PERIOD_MS / 2)
+    if (millis() - lastTimeChanged > POLL_PERIOD_MS)
     {
         lastTimeChanged = millis();
         u16_t adc_value = analogRead(pin);
