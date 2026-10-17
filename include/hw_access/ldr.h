@@ -1,8 +1,8 @@
 #pragma once
 
-#include "board_component.h"
+#include "component.h"
 
-class Ldr : public BoardComponent
+class Ldr : public Component
 {
 private:
     static constexpr u8_t WINDOW_SIZE = 4;

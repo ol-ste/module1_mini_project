@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "hw_access/led.h"
 
-Led::Led(u8_t pinValue) : BoardComponent(pinValue) {}
+Led::Led(u8_t pinValue) : Component(pinValue) {}
 
 void Led::init()
 {

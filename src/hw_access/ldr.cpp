@@ -2,7 +2,7 @@
 #include "hw_access/config.h"
 #include "hw_access/ldr.h"
 
-Ldr::Ldr(u8_t pinValue) : BoardComponent(pinValue) {}
+Ldr::Ldr(u8_t pinValue) : Component(pinValue) {}
 
 u16_t Ldr::get_value()
 {

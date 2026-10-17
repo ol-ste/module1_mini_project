@@ -1,9 +1,9 @@
 #pragma once
 
-#include "board_component.h"
+#include "component.h"
 #include "led_mode.h"
 
-class Led : BoardComponent
+class Led : Component
 {
 private:
     static constexpr u16_t BLINKING_SLOW_PERIOD_MS = 500;

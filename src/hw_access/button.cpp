@@ -2,7 +2,7 @@
 #include "hw_access/config.h"
 #include "hw_access/button.h"
 
-Button::Button(u8_t pinValue) : BoardComponent(pinValue) {}
+Button::Button(u8_t pinValue) : Component(pinValue) {}
 
 bool Button::get_state()
 {

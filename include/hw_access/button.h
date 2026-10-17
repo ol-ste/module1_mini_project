@@ -1,8 +1,8 @@
 #pragma once
 
-#include "board_component.h"
+#include "component.h"
 
-class Button : public BoardComponent
+class Button : public Component
 {
 private:
     u32_t lastTimeChanged = 0;
